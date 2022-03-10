@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ang="pt">
+    <head>
+        <title>Formulário de contato</title>
+        <meta charset="UTF-8">
+        <style>
+            li#conf{
+                display: inline;
+                text-align: left; 
+            }
+            body{
+                background-color: #4b204b;
+               
+                text-align: center;  
+                justify-content: center;
+            }
+            div#divi{
+                text-align: center;  
+                justify-content: center;
+                background-color: aliceblue;
+            }
+            li{
+                align-items: center;
+            }
+            ul#alinha{
+                width: 20%;
+                margin: auto;
+            }
+            a#muda{
+                color: #f0f0f0;
+            }
+            img    {
+                border-radius: 50%;
+                border:5px solid #f0f0f0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="divi">
+            <h2>Formulário para contato</h2>
+            <form action="http://localhost:3000/programa.php" method="get">
+                <p>
+                    Nome:
+                    <br> 
+                    <textarea rows="1" cols="60" name="nome" required>Digite o nome</textarea>
+                </p>
+                <p>
+                    Fone:
+                    <br> 
+                    <textarea rows="1" cols="20" name="tel" required>Digite telefone</textarea>
+                </p>
+                <p>
+                    E-mail:
+                    <br> 
+                    <textarea rows="1" cols="60" name="tel" required>E-mail para contato</textarea>
+                </p>
+                <p>Motivo do contato 
+                    <br>
+                    <select name="motivo">
+                        <option value="pro">Profissional</option>
+                        <option value="pessoa">Pessoal</option>
+                        <option value="duvi">Dúvida</option>
+                        <option value="urg">Urgente</option>
+                    </select>
+                </p>
+                <p>
+                    Comentário:
+                    <br> 
+                    <textarea rows="3" cols="60" name="tel">Digite seu comentário</textarea></p>
+        </form>
+    </div>
+    </body>
+
+</html>
